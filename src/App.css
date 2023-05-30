@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+   text-align: center;
+   font-weight: 500;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2,h3{
+  text-align: center; 
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.moiveList{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 20px;
+  width: 90%;
+  padding: 20px;
+}
+.selected_movie{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  border-radius:10px;
+  box-shadow:2px 2px 2px 10px solid black;
+ 
+ }
+.selected_movie> img{
+  border-radius: 20px;
+  box-sizing: content-box;
+  box-shadow: 2px 2px 2px 2px #efe7e7;
+  padding: 10px;
+  width: 300px;
+  height:400px
+}
+.selected_movie>button{
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgb(167, 154, 154);
+  box-sizing: 2px 2px 2px solid white;
+  border: none;
+}
+.selected_movie>button:hover{
+  background-color: black;
+  color:white
+}
+h4{
+  text-align: center; 
+}
+.screen_container{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  width: 80%;
 
-.App-link {
-  color: #61dafb;
 }
+.screenleft{
+  display: flex;
+  width: 100%;
+  column-gap: 200px;
+}
+.screenlist{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ transition: 0ms;
+  text-align: center;
+  margin-top: 20px;
+
 }
+.Screen_seat >.avaliable{
+  background-color: rgb(244, 244, 244);
+  color:black
+}
+.Screen_seat >.unavaliable{
+  background-color: black;
+  color:white;
+  cursor: not-allowed;
+}
+.Screen_seat >.selected{
+  background-color: rgb(39, 138, 214);
+}
+.screen{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow:0px 2px 6px rgba(0,0,0,5);
+}
+.screentop{
+  width: 80%;
+}
+.screenright{
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  justify-content: space-between;
+
+}
+.Screen_seat{
+  display: flex;
+  column-gap: 10px;
+  box-shadow: 2px 2px 2px 2px solid black; 
+}
+.seat{
+  width:50px;
+  border-radius: 4px;
+  /* border: 2px solid black; */
+  box-shadow:0px 2px 6px rgba(0,0,0,5);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  height: 40px;
+  text-align: center;
+
+}
+.finalpart{
+  box-shadow: 0px 2px 6px rgba(0,0,0,5);
+  /* padding: 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ 
+  width: 30%;
+  margin-bottom: 20px;
+}
+.booking_details{
+  /* float: left; */
+}
+button:disabled{
+  cursor: not-allowed;
+  width: 100%;
+ 
+}
+.button{
+  box-shadow: 0px 2px 6px rgb(102 207 231);
+  padding: 15px;
+  background-color: rgb(46, 153, 219);
+  border: none;
+  cursor: pointer;
+}
+button:disabled:hover{
+  background-color: rgb(46, 153, 219);
+
+}
+.button:hover{
+  background-color: blue;
+  /* color:white */
+}
+/* .screen .selected{
+  background-color: red;
+} */
